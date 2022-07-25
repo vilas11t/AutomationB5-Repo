@@ -19,7 +19,7 @@ public class Locators1 {
 	
 		
 		
-		
+	
 	driver.findElement(By.id("email")).sendKeys("tushar.cherphale@gmail.com");
 		driver.findElement(By.id("pass")).sendKeys("123");
 		
