@@ -25,7 +25,7 @@ public class Locators {
 		driver.get("https://www.rediff.com/");
 
 		// 1. findElement - return only one webelement, NoSuch element exception
-		// 2 findElements - return List of web elements
+		// 2 findElements - return List of web elements.  for no matching web element it return empty list
 
 		WebElement rediffMailLink = driver.findElement(By.className("mailicon123"));
 
