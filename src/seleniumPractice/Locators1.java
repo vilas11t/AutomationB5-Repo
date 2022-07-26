@@ -15,8 +15,9 @@ public class Locators1 {
 	
 		
 		driver.get("https://www.facebook.com/");
-	   System.out.println(driver.getTitle());
-		
+
+	   System.out.println(driver.getTitle()		
+
 	driver.findElement(By.id("email")).sendKeys("tushar.cherphale@gmail.com");
 		driver.findElement(By.id("pass")).sendKeys("123");
 		
