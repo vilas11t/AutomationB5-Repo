@@ -18,6 +18,8 @@ public class LocatorsPractice2 {
 	    driver=new ChromeDriver();
 		driver.get("https://www.rediff.com/");
 		toPrintMenu();
+		printSubMenu();
+		driver.close();
 	}
 	
 	
@@ -28,5 +30,14 @@ public class LocatorsPractice2 {
 		for(WebElement w:menu) {
 			System.out.println(w.getText());
 		}
+	}
+	
+	static void printSubMenu() {
+	 List<WebElement> menus=driver.findElements(By.xpath("//div[@id='tabtable']//div"));
+	 System.out.println("Size of List:"+menus.size());
+	 for(int i=0;i<menus.size();i++) {
+		 System.out.println(menus.get(i).getText());
+	 }
+	 
 	}
 }
