@@ -1,5 +1,7 @@
 package seleniumBasic;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,6 +27,8 @@ public class SelectClassPractice {
 	 deselectByIndex
 	 deselectByVisibleText
 	 
+	 isMultiple- boolean
+	 
 	 
 	 */
 	
@@ -46,7 +50,15 @@ public class SelectClassPractice {
 		s.selectByValue("option3");
 		s.selectByVisibleText("Option2");
 		
-	
+		System.out.println(s.isMultiple());
+		
+		// To print all menu from drop down
+		List<WebElement>menus=s.getOptions();
+		
+		for(int i =0;i<menus.size();i++) {
+			System.out.println(menus.get(i).getText());
+		}
+		
 		
 	
 		
