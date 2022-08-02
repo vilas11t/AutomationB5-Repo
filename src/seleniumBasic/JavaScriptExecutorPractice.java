@@ -79,6 +79,6 @@ public class JavaScriptExecutorPractice {
 	
 	static void scrollintoWebElement() {
 		js.executeScript("arguments[0].scrollIntoView()",driver.findElement(By.xpath("//a[text()='Contact Us']")));
-	}
+	} 
 	
 }
