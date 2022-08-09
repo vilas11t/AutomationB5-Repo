@@ -6,12 +6,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import seleniumBasic.BaseClass;
+
 public class AssignmentTable extends BaseClass{
 
 static WebDriver driver;
 	
 	public static void main(String[] args) {
-		driver=driverinitialize();
+		driver=driverInitialize();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/#");
 		AssignmentTable obj=new AssignmentTable();
 		//obj.displaySingleRowOfTable();
