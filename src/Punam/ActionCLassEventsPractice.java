@@ -7,9 +7,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
 
 public class ActionCLassEventsPractice {
 	static WebDriver driver;
+	@Test
 	public static void main(String[] args) throws InterruptedException {
 		SystemProperties.setProp();
 		driver=new ChromeDriver();
@@ -19,6 +22,8 @@ public class ActionCLassEventsPractice {
 		testSearchBox();
 		
 	}
+	
+	@Test
 	private static void testSearchBox() {
 		// TODO Auto-generated method stub
 		WebElement we =driver.findElement(By.id("twotabsearchtextbox"));
@@ -26,6 +31,8 @@ public class ActionCLassEventsPractice {
 		we.sendKeys("Shoes");
 		action.click(driver.findElement(By.id("nav-search-submit-button"))).build().perform();
 	}
+	
+	@Test
 	private static void testMouseHover() {
 		// TODO Auto-generated method stub
 		WebElement we=driver.findElement(By.id("icp-nav-flyout"));
@@ -34,4 +41,10 @@ public class ActionCLassEventsPractice {
 		action.click(we).build().perform();
 		driver.navigate().back();
 	}
+	
+	@Test
+	void main() {
+		System.out.println("This is test method from poonam package");
+	}
+	
 }
