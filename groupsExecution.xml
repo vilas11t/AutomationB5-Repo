@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<!-- <test name="Test1">
+		<groups>
+			<run>
+				<include name="group1" />
+			</run>
+		</groups>
+		<classes>
+			<class name="testNG.GroupsPractice" />
+			<class name="testNG.PriorityPractice" />
+		</classes>
+	</test> Test -->
+	
+	<test name="Test2">
+		<groups>
+			<run>
+				<exclude name="group1" />
+			</run>
+		</groups>
+		<classes>
+			<class name="testNG.GroupsPractice" />
+			<class name="testNG.PriorityPractice" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

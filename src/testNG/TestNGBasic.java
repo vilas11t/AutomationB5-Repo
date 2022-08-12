@@ -80,7 +80,7 @@ public class TestNGBasic {
 	 
 	 @BeforeMethod
 	 void beforeMethod() {
-		 System.out.println("Thius is before method");
+		 System.out.println("This is before method");
 	 }
 	 
 	 @AfterMethod
