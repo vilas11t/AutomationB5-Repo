@@ -1,6 +1,11 @@
 package testNG;
 
+import static org.testng.Assert.assertTrue;
+
+import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
 
 public class ClassB {
 	
@@ -19,6 +24,6 @@ public class ClassB {
 	
 	@Test(groups= {"sanity"})
 	void classBm3() {
-		System.out.println("This is class B m3 method");
+		Assert.assertTrue(false);
 	}
 }
