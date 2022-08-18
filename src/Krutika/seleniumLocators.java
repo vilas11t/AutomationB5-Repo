@@ -25,10 +25,13 @@ public class seleniumLocators {
 		//Guru.com Exercise
 		Driver.get("https://www.demo.guru99.com/V4/");
 		Driver.manage().window().maximize();
-		Driver.findElement(By.id("message23")).sendKeys("mngr432703");
+		Driver.findElement(By.name("uid")).sendKeys("mngr432703");
 		Driver.findElement(By.name("password")).sendKeys("pAnaqAp");
 		Driver.findElement(By.name("btnLogin")).click();
 		
+		
+		
+		//Driver.findElement(By.xpath());
 		}
 
 }
