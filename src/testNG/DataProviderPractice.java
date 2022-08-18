@@ -9,11 +9,9 @@ import org.testng.annotations.Test;
 
 import seleniumBasic.BaseClass;
 
-public class DataProviderPractice extends BaseClass {
-
-
-	public WebDriver driver;
+public class DataProviderPractice extends BaseClass{
 	
+	public WebDriver driver;
 	@BeforeClass
 	void beforeClass()
 	{
@@ -44,5 +42,5 @@ public class DataProviderPractice extends BaseClass {
 		//driver.close();
 	}
 
-}
 
+}
